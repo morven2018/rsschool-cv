@@ -1,4 +1,5 @@
 # Pudina Alena
+![Photo](https://lh3.googleusercontent.com/a/ACg8ocKVwInKOvap6wa7aaz_84V8rW80ZxiM_G_VqWP2Ix61wbArR0k=s288-c-no)
 # Contact Info
 ### **Email** 
 * [gueguc@gmail.com](mailto:gueguc@gmail.com) 
