@@ -145,4 +145,13 @@ class Solution:
 
 * [G4U](https://se.cs.petrsu.ru/wiki/G4U)
 * [P2P Systems](https://se.cs.petrsu.ru/wiki/P2P_Systems)
-      
+
+# Education
+**Petrozavodsk State University**
+
+Bachelor: *Applied mathematics and computer science*
+
+# Languages
+
+* **English** - B2 (Cambridge School)
+* **Spanish** - A2
