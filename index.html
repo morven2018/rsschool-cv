@@ -44,8 +44,7 @@
         <h1>Pudina Alena</h1>
         <h2>Summary</h2>
         <p>A responsible and challenge-ready person, interested in new things. I am used to dealing with large amounts
-            of
-            information and I know how to work in a team.</p>
+            of information and I know how to work in a team.</p>
         <div class="line">
             <hr>
         </div>
@@ -113,8 +112,8 @@
                     <li>WordPress</li>
                 </ul>
             </li>
-            <li>
-                <ul>Python
+            <li>Python
+                <ul>
                     <li>NumPy</li>
                     <li>TensorFlow</li>
                 </ul>
@@ -144,7 +143,7 @@
                     l1, l2 = len(nums1), len(nums2)
                     i1, i2 = 0, 0
                     res = []
-                    while i1+i2 &lt; l1 + l2 :
+                    while i1+i2 &lt; l1 + l2:
                         if i2==l2 or i1 &lt; l1 and nums1[i1] &lt;=nums2[i2]:
                             res.append(nums1[i1])
                             i1 +=1
@@ -162,23 +161,17 @@
         <details>
             <summary>
                 Seven different symbols represent Roman numerals:<br>
-                Roman numerals are formed by appending the conversions of decimal place values from highest to
-                lowest. Converting a
-                decimal place value into a Roman numeral has the following rules:<br>
-                If the value does not start with 4 or 9, select the symbol of the maximal value that can be
-                subtracted from the input,
-                append that symbol to the result, subtract its value, and convert the remainder to a Roman numeral.
-                If the value starts with 4 or 9 use the subtractive form representing one symbol subtracted from the
-                following symbol,
-                for example, 4 is 1 (I) less than 5 (V): IV and 9 is 1 (I) less than 10 (X): IX. Only the following
-                subtractive forms
-                are used: 4 (IV), 9 (IX), 40 (XL), 90 (XC), 400 (CD) and 900 (CM).<br>
-                Only powers of 10 (I, X, C, M) can be appended consecutively at most 3 times to represent multiples
-                of 10. You cannot
-                append 5 (V), 50 (L), or 500 (D) multiple times. If you need to append a symbol 4 times use the
-                subtractive form.
-                Given an integer, convert it to a Roman numeral.
-            </summary>
+                Roman numerals are formed by appending the conversions of decimal place values from highest to lowest.
+                Converting a decimal place value into a Roman numeral has the following rules:<br>
+                If the value does not start with 4 or 9, select the symbol of the maximal value that can be subtracted
+                from the input, append that symbol to the result, subtract its value, and convert the remainder to a
+                Roman numeral. If the value starts with 4 or 9 use the subtractive form representing one symbol
+                subtracted from the following symbol, for example, 4 is 1 (I) less than 5 (V): IV and 9 is 1 (I) less
+                than 10 (X): IX. Only the following subtractive forms are used: 4 (IV), 9 (IX), 40 (XL), 90 (XC), 400
+                (CD) and 900 (CM).<br>
+                Only powers of 10 (I, X, C, M) can be appended consecutively at most 3 times to represent multiples of
+                10. You cannot append 5 (V), 50 (L), or 500 (D) multiple times. If you need to append a symbol 4 times
+                use the subtractive form. Given an integer, convert it to a Roman numeral.</summary>
             <pre>
                 class Solution:
                     def intToRoman(self, num: int) &#8209;&gt; str:
@@ -197,7 +190,7 @@
                         900: "CM",
                         1000: "M"
                     }
-            
+                    <br>
                     res = ''
                     cur = -1
                     for x in sorted(to_romans, reverse=True):
