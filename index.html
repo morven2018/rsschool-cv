@@ -144,16 +144,16 @@
                     l1, l2 = len(nums1), len(nums2)
                     i1, i2 = 0, 0
                     res = []
-                    while i1+i2 &lt; l1 + l2 : 
-                        if i2==l2 or i1 &lt; l1 and nums1[i1] &lt;=nums2[i2]: 
+                    while i1+i2 &lt; l1 + l2 :
+                        if i2==l2 or i1 &lt; l1 and nums1[i1] &lt;=nums2[i2]:
                             res.append(nums1[i1])
-                            i1 +=1 
+                            i1 +=1
                         else:
                             res.append(nums2[i2])
                             i2 +=1
-                            if len(res) % 2==1: 
-                                return res[len(res) // 2] 
-                            else: 
+                            if len(res) % 2==1:
+                                return res[len(res) // 2]
+                            else:
                                 return (res[len(res) // 2 - 1] + res[len(res) // 2]) / 2
             </pre>
 
@@ -162,11 +162,9 @@
         <details>
             <summary>
                 Seven different symbols represent Roman numerals:<br>
-
                 Roman numerals are formed by appending the conversions of decimal place values from highest to
                 lowest. Converting a
                 decimal place value into a Roman numeral has the following rules:<br>
-
                 If the value does not start with 4 or 9, select the symbol of the maximal value that can be
                 subtracted from the input,
                 append that symbol to the result, subtract its value, and convert the remainder to a Roman numeral.
@@ -203,7 +201,7 @@
                     res = ''
                     cur = -1
                     for x in sorted(to_romans, reverse=True):
-                        if num >= cur and cur != -1:
+                        if num &gt;= cur and cur != -1:
                             res += num // cur * to_romans[cur]
                             num = num % cur
                         cur = x
